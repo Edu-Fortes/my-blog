@@ -1,11 +1,18 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
 html {
   font-family: var(--font-wix-madefor-display);
 }
 
 body {
   background-color: #f9f4ec;
-  max-width: 60.6rem;
+  max-width: 80rem;
   margin: 0 auto;
+  padding-inline: 1.5rem;
 }
 
 h1,
@@ -15,4 +22,5 @@ h4,
 h5,
 h6 {
   font-family: var(--font-comfortaa);
+  font-weight: 700;
 }
