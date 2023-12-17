@@ -1,0 +1,9 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  min-height: 3.375rem;
+}
+
+.header__logo {
+  max-width: 7.125rem;
+}

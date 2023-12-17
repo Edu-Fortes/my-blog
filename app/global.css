@@ -2,6 +2,12 @@ html {
   font-family: var(--font-wix-madefor-display);
 }
 
+body {
+  background-color: #f9f4ec;
+  max-width: 60.6rem;
+  margin: 0 auto;
+}
+
 h1,
 h2,
 h3,
