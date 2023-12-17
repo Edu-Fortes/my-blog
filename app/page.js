@@ -1,7 +1,11 @@
+import Main from "./components/Main";
 import Header from "./components/Header";
+
 export default function Home() {
   return (
+    <>
       <Header />
+      <Main />
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
         condimentum augue velit. Quisque dictum nunc non laoreet convallis. Sed
@@ -14,6 +18,6 @@ export default function Home() {
         consequat nunc. Duis ac scelerisque nunc. Pellentesque quis accumsan
         orci.
       </p>
-    </div>
+    </>
   );
 }
