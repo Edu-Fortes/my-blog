@@ -9,7 +9,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html
-      lang="en"
+      lang="pt-BR"
       className={`${comfortaa.variable} ${wixMadeforDisplay.variable}`}
     >
       <body>{children}</body>
