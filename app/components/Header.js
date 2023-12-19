@@ -1,5 +1,5 @@
 import Image from "next/image";
-import logo from "../../public/next.svg";
+import logo from "/public/next.svg";
 import style from "../components/style.module.css";
 
 export default function Header() {
