@@ -4,7 +4,7 @@ export default function Main({ children }) {
   return (
     <main>
       <h1 className={styles.heading}>Últimas postagens</h1>
-      <section className={styles.posts}>{children}</section>
+      <section>{children}</section>
     </main>
   );
 }
