@@ -6,6 +6,7 @@
 
 .header__logo {
   max-width: 7.125rem;
+  height: auto;
 }
 
 .heading {
