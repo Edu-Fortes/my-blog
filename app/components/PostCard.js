@@ -31,6 +31,7 @@ export default function PostCard() {
                 </time>
               </div>
             </div>
+            <hr />
           </article>
           <article className={styles.article}>
             <div>
@@ -62,6 +63,7 @@ export default function PostCard() {
                 </time>
               </div>
             </div>
+            <hr />
           </article>
           <article className={styles.article}>
             <h2 className={styles.article__title}>
@@ -86,6 +88,7 @@ export default function PostCard() {
                 </time>
               </div>
             </div>
+            <hr />
           </article>
         </div>
         <div>
@@ -119,6 +122,7 @@ export default function PostCard() {
                 </time>
               </div>
             </div>
+            <hr />
           </article>
           <article className={styles.article}>
             <div>
@@ -150,6 +154,7 @@ export default function PostCard() {
                 </time>
               </div>
             </div>
+            <hr />
           </article>
         </div>
         <div>
@@ -183,6 +188,7 @@ export default function PostCard() {
                 </time>
               </div>
             </div>
+            <hr />
           </article>
           <article className={styles.article}>
             <h2 className={styles.article__title}>
@@ -207,6 +213,7 @@ export default function PostCard() {
                 </time>
               </div>
             </div>
+            <hr />
           </article>
           <article className={styles.article}>
             <div>
@@ -238,6 +245,7 @@ export default function PostCard() {
                 </time>
               </div>
             </div>
+            <hr />
           </article>
         </div>
       </div>
