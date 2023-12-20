@@ -1,5 +1,8 @@
 import "./global.css";
 import { comfortaa, wixMadeforDisplay } from "./fonts";
+import Header from "./components/Header";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 export const metadata = {
   title: "Meu blog - Últimas postagens",
@@ -12,7 +15,13 @@ export default function RootLayout({ children }) {
       lang="pt-BR"
       className={`${comfortaa.variable} ${wixMadeforDisplay.variable}`}
     >
-      <body>{children}</body>
+      <body>
+        <Header>
+          <Navbar />
+        </Header>
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }
