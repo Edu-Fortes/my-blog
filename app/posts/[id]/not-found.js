@@ -1,9 +1,9 @@
 import Link from "next/link";
 
-export default function PostPage() {
+export default function NotFound() {
   return (
     <>
-      <h1>Página do Post</h1>
+      <h1>A postagem requisitada não existe</h1>
       <Link href="/">Voltar</Link>
     </>
   );
