@@ -9,14 +9,22 @@ export default function Home() {
   return (
     <main>
       <h1 className={styles.heading}>Últimas postagens</h1>
-      <PostCards />
-      <section>
-        <h2>Blog</h2>
-        <ul>
-          {posts.map((post) => (
+      <section className={styles.posts}>
+        <PostCards>
+          {posts.slice(0, 3).map((post) => (
             <ListPosts key={post.id} post={post} />
           ))}
-        </ul>
+        </PostCards>
+        <PostCards>
+          {posts.slice(3, 5).map((post) => (
+            <ListPosts key={post.id} post={post} />
+          ))}
+        </PostCards>
+        <PostCards>
+          {posts.slice(5, 8).map((post) => (
+            <ListPosts key={post.id} post={post} />
+          ))}
+        </PostCards>
       </section>
     </main>
   );

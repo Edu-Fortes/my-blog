@@ -1,4 +1,8 @@
-import { getPostData, getSortedPostsData } from "@/app/lib/posts";
+import {
+  getAllPostIds,
+  getPostData,
+  getSortedPostsData,
+} from "@/app/lib/posts";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
