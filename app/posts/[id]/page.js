@@ -1,12 +1,12 @@
-import { getSortedPostsData } from "@/app/lib/posts";
+import { getPostData, getSortedPostsData } from "@/app/lib/posts";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
 export function generateMetadata({ params }) {
   const posts = getSortedPostsData();
-  const { postId } = params;
+  const { id } = params;
 
-  const post = !posts.find((post) => post.id === postId);
+  const post = posts.find((post) => post.id === id);
 
   if (!post) {
     return {
@@ -15,7 +15,7 @@ export function generateMetadata({ params }) {
   }
 
   return {
-    title: post.title,
+    title: `Meu blog - ${post.title}`,
   };
 }
 
@@ -28,15 +28,20 @@ export function generateStaticParams() {
 
 export default async function PostPage({ params }) {
   const posts = getSortedPostsData();
-  const { postId } = params;
+  const { id } = params;
 
-  if (!posts.find((post) => post.id === postId)) {
+  if (!posts.find((post) => post.id === id)) {
     return notFound();
   }
 
+  const { title, date, content } = await getPostData(id);
   return (
     <>
-      <h1>Página do Post</h1>
+      <h1>{title}</h1>
+      <p>{date}</p>
+      <article>
+        <section dangerouslySetInnerHTML={{ __html: content }} />
+      </article>
       <Link href="/">Voltar</Link>
     </>
   );
