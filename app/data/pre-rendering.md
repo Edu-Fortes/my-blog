@@ -2,6 +2,7 @@
 title: "Post 2"
 date: "2023-12-23T00:00:00"
 description: "Esse é só um teste da descrição do post, assim tem uma prévia de como vai ficar"
+author: "Eduardo Morikuni Fortes"
 ---
 
 Next.js has two forms of pre-rendering: **Static Generation** and **Server-side Rendering**. The difference is in **when** it generates the HTML for a page.

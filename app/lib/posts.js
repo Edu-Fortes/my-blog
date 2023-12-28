@@ -78,6 +78,7 @@ export async function getPostData(id) {
     id,
     title: matterResult.data.title,
     date: matterResult.data.date,
+    author: matterResult.data.author,
     content: contentHtml,
   };
 }
