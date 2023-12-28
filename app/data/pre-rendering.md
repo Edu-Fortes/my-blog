@@ -1,6 +1,6 @@
 ---
-title: "Two Forms of Pre-rendering"
-date: "2020-01-01"
+title: "Post 2"
+date: "2023-12-23T00:00:00"
 description: "Esse é só um teste da descrição do post, assim tem uma prévia de como vai ficar"
 ---
 

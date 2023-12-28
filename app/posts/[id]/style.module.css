@@ -1,0 +1,15 @@
+.post {
+  padding-inline: 10rem;
+  padding-block: 3rem;
+}
+
+.post__title {
+  max-width: 60%;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 2.5rem;
+}
+
+.post__article {
+  padding-block: 2rem 1rem;
+}

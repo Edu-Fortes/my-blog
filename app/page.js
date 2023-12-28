@@ -1,4 +1,5 @@
 import PostCards from "./components/PostCards";
+import PostCardHide from "./components/PostCardHide";
 import ListPosts from "./components/ListPosts";
 import styles from "./components/style.module.css";
 import { getSortedPostsData } from "./lib/posts";
@@ -20,11 +21,11 @@ export default function Home() {
             <ListPosts key={post.id} post={post} />
           ))}
         </PostCards>
-        <PostCards>
+        <PostCardHide>
           {posts.slice(5, 8).map((post) => (
             <ListPosts key={post.id} post={post} />
           ))}
-        </PostCards>
+        </PostCardHide>
       </section>
     </main>
   );

@@ -28,3 +28,12 @@ h6 {
 hr {
   border-color: #00000020;
 }
+
+p {
+  padding-bottom: 1rem;
+}
+
+ul {
+  padding-bottom: 1rem;
+  padding-left: 2rem;
+}

@@ -1,10 +1,8 @@
-import {
-  getAllPostIds,
-  getPostData,
-  getSortedPostsData,
-} from "@/app/lib/posts";
+import { getPostData, getSortedPostsData } from "@/app/lib/posts";
+import formatDate from "@/app/lib/formatDate";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import styles from "./style.module.css";
 
 export function generateMetadata({ params }) {
   const posts = getSortedPostsData();
@@ -39,14 +37,17 @@ export default async function PostPage({ params }) {
   }
 
   const { title, date, content } = await getPostData(id);
+  const formattedDate = formatDate(date);
+
   return (
-    <>
-      <h1>{title}</h1>
-      <p>{date}</p>
-      <article>
-        <section dangerouslySetInnerHTML={{ __html: content }} />
-      </article>
+    <main className={styles.post}>
+      <h1 className={styles.post__title}>{title}</h1>
+      <time datetime={date}>{formattedDate}</time>
+      <article
+        className={styles.post__article}
+        dangerouslySetInnerHTML={{ __html: content }}
+      />
       <Link href="/">Voltar</Link>
-    </>
+    </main>
   );
 }

@@ -2,10 +2,11 @@ import Link from "next/link";
 import Image from "next/image";
 import styles from "./style.module.css";
 import avatar from "/public/avatar.png";
+import formatDate from "../lib/formatDate";
 
 export default function ListPosts({ post }) {
   const { id, description, title, date, author, cover } = post;
-  console.log(cover);
+  const formattedDate = formatDate(date);
   return (
     <li>
       <Link href={`posts/${id}`} className={styles.link}>
@@ -33,20 +34,17 @@ export default function ListPosts({ post }) {
             />
             <div>
               <h3 className={styles.author__title}>{author}</h3>
-              <time dateTime={date} className={styles.article__date}>
-                17 de dezembro de 2023
+              <time
+                dateTime={date.slice(-19, -9)}
+                className={styles.article__date}
+              >
+                {formattedDate}
               </time>
             </div>
           </div>
           <hr />
         </article>
       </Link>
-      {/* <br />
-      {id}
-      <br />
-      {description}
-      <br />
-      {date} */}
     </li>
   );
 }

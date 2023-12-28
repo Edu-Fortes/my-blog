@@ -51,6 +51,10 @@
   padding: 0 0.8125rem 1.5rem;
 }
 
+.article__date {
+  font-size: 0.75rem;
+}
+
 .author {
   display: flex;
   gap: 0.625rem;
@@ -69,10 +73,6 @@
   font-family: var(--font-wix-madefor-display);
   font-weight: 600;
   font-size: 0.875rem;
-}
-
-.article__date {
-  font-size: 0.75rem;
 }
 
 .footer {
