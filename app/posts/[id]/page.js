@@ -5,7 +5,6 @@ import Image from "next/image";
 import { notFound } from "next/navigation";
 import styles from "./style.module.css";
 import avatar from "/public/avatar.png";
-import coverImg from "/public/post_img_example.jpeg";
 
 export function generateMetadata({ params }) {
   const posts = getSortedPostsData();
@@ -60,7 +59,6 @@ export default async function PostPage({ params }) {
           </time>
         </div>
       </div>
-      <Image src={coverImg} alt="tste" height={500} />
       <article
         className={styles.post__article}
         dangerouslySetInnerHTML={{ __html: content }}
