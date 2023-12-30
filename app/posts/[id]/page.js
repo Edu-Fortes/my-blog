@@ -44,7 +44,9 @@ export default async function PostPage({ params }) {
 
   return (
     <main className={styles.post}>
-      <h1 className={styles.post__title}>{title}</h1>
+      <h1 className={styles.post__title} id="top">
+        {title}
+      </h1>
       <div className={styles.author}>
         <Image
           src={avatar}
@@ -63,7 +65,10 @@ export default async function PostPage({ params }) {
         className={styles.post__article}
         dangerouslySetInnerHTML={{ __html: content }}
       />
-      <Link href="/">Voltar</Link>
+      <footer className={styles.post__footer}>
+        <Link href="/">Voltar</Link>
+        <Link href="#top">Top</Link>
+      </footer>
     </main>
   );
 }

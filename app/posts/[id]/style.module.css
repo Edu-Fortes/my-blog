@@ -1,5 +1,5 @@
 .post {
-  padding-inline: 10rem;
+  padding-inline: 15%;
   padding-block: 3rem;
 }
 
@@ -16,6 +16,12 @@
 
 .post__time {
   text-align: center;
+}
+
+.post__footer {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
 }
 
 .author {
@@ -41,4 +47,10 @@
 
 .article__date {
   font-size: 0.75rem;
+}
+
+@media screen and (max-width: 800px) {
+  .post {
+    padding-inline: 5%;
+  }
 }
